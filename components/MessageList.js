@@ -19,7 +19,7 @@ class MessageList extends React.Component {
   render() {
     return (
       <div className="message-list">
-        {DUMMY_DATA.map((message, index) => {
+        {this.props.messages.map((message, index) => {
           return (
             <div key={index} className="message">
               <div>[message.senderId]</div>
